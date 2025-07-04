@@ -76,12 +76,12 @@ flutter:
   fonts:
     - family: Boild
       fonts:
-        - asset: asset/fonts/Poppins-Bold.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
     - family: Regular
       fonts:
-        - asset: asset/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Regular.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
