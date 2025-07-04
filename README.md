@@ -4,8 +4,8 @@ A new flutter project to creating blinkit clone application.
 
 ## Day - 1
 
-Create a new flutter project and create some dart file to assign our colors for use in this blinkit clone appliction.
-After all create splash screen for blinkit application.
+>*Create a new flutter project and create some dart file to assign our colors for use in this blinkit clone appliction.
+>*After all create splash screen for blinkit application.
 
 ```
 import 'dart:async';
