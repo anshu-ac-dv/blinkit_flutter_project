@@ -1,11 +1,39 @@
 # Blinkit Clone Application
 
-A new flutter project to creating blinkit clone application.
+>* A new flutter project to creating blinkit clone application.
+>* Main.dart file code :
+
+```
+import 'package:blinkit_flutter_project/repository/screens/splash/splash_screen.dart';
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Blinkit',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: false,
+      ),
+      home: SplashScreen(),
+    );
+  }
+}
+
+```
 
 ## Day - 1
 
->*Create a new flutter project and create some dart file to assign our colors for use in this blinkit clone appliction.
->*After all create splash screen for blinkit application.
+>* Create a new flutter project and create some dart file to assign our colors for use in this blinkit clone appliction.
+>* After all create splash screen for blinkit application.
 
 ```
 import 'dart:async';
