@@ -1,16 +1,51 @@
-# blinkit_flutter_project
+# Blinkit Clone Application
 
-A new Flutter project.
+A new flutter project to creating blinkit clone application.
 
-## Getting Started
+## Day - 1
 
-This project is a starting point for a Flutter application.
+Create a new flutter project and create some dart file to assign our colors for use in this blinkit clone appliction.
+After all create splash screen for blinkit application.
 
-A few resources to get you started if this is your first Flutter project:
+```
+import 'dart:async';
+import 'package:blinkit_flutter_project/domain/constants/app_colors.dart';
+import 'package:blinkit_flutter_project/repository/screens/login/login_screen.dart';
+import 'package:blinkit_flutter_project/repository/widgets/ui_helper.dart';
+import 'package:flutter/material.dart';
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+    super.initState();
+    Timer(Duration(seconds: 2), () {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => LoginScreen()),
+      );
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: AppColors.scaffloldbackground,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [UiHelper.constomImage(img: "splash.png")],
+        ),
+      ),
+    );
+  }
+}
+```
+
