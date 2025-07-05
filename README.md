@@ -33,6 +33,45 @@ class MyApp extends StatelessWidget {
 ## Day - 1
 
 >* Create a new flutter project and create some dart file to assign our colors for use in this blinkit clone appliction.
+>* Define and Adding App color in seperate file.
+```
+import 'package:flutter/material.dart';
+
+class AppColors {
+  static const Color scaffloldbackground = Color(0XFFF7CB45);
+}
+
+```
+
+>* Creating some classes for define images, text etc. for future use.
+```
+import 'package:flutter/material.dart';
+
+class UiHelper {
+  static constomImage({required String img}) {
+    return Image.asset("assets/images/$img");
+  }
+
+  static costomText({
+    required String text,
+    required Color color,
+    required FontWeight fontweight,
+    String? fontfamily,
+    required double fontsize,
+  }) {
+    return Text(
+      text,
+      style: TextStyle(
+        fontSize: fontsize,
+        fontFamily: fontfamily ?? "regular",
+        fontWeight: fontweight,
+        color: color,
+      ),
+    );
+  }
+}
+
+```
 >* After all create splash screen for blinkit application.
 
 ```
@@ -77,3 +116,6 @@ class _SplashScreenState extends State<SplashScreen> {
 }
 ```
 
+## Day - 2
+
+>* Creating clone login screen in this appliction.
