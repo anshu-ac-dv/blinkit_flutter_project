@@ -21,6 +21,32 @@ class LoginScreen extends StatelessWidget {
               fontsize: 20,
               fontfamily: "blod",
             ),
+            SizedBox(height: 20),
+            Card(
+              elevation: 4,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Container(
+                height: 200,
+                width: 350,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Color(0XFFFFFFFF),
+                ),
+                child: Column(
+                  children: [
+                    SizedBox(height: 20),
+                    UiHelper.costomText(
+                      text: "Anshu Kumar",
+                      color: Colors.black,
+                      fontweight: FontWeight.w500,
+                      fontsize: 14,
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
