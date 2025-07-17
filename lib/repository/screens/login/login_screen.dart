@@ -40,8 +40,61 @@ class LoginScreen extends StatelessWidget {
                     UiHelper.costomText(
                       text: "Anshu Kumar",
                       color: Colors.black,
-                      fontweight: FontWeight.w500,
+                      fontweight: FontWeight.w800,
                       fontsize: 14,
+                    ),
+                    SizedBox(height: 10),
+                    UiHelper.costomText(
+                      text: "+91 8710080479",
+                      color: Colors.black,
+                      fontweight: FontWeight.bold,
+                      fontsize: 14,
+                    ),
+                    SizedBox(height: 20),
+                    SizedBox(
+                      height: 48,
+                      width: 295,
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.red,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            UiHelper.costomText(
+                              text: "Login With",
+                              color: Colors.white,
+                              fontweight: FontWeight.bold,
+                              fontsize: 14,
+                            ),
+                            SizedBox(width: 5),
+                            UiHelper.costomText(
+                              text: "Zomato",
+                              color: Colors.white,
+                              fontweight: FontWeight.bold,
+                              fontsize: 20,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 5),
+                    UiHelper.costomText(
+                      text: "Access your saved address form zomato automaticly",
+                      color: Colors.black,
+                      fontweight: FontWeight.normal,
+                      fontsize: 10,
+                    ),
+                    SizedBox(height: 10),
+                    UiHelper.costomText(
+                      text: "Login with your phone number",
+                      color: const Color.fromARGB(255, 32, 159, 233),
+                      fontweight: FontWeight.bold,
+                      fontsize: 15,
                     ),
                   ],
                 ),
